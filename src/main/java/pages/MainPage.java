@@ -12,14 +12,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 @Getter
 public class MainPage extends BasePage {
 
-  @FindBy(xpath = "/html/head/meta[contains(@content,\"Доставка по всей Украине\")]")
-  private WebElement textDelivery;
-
-
-  public MainPage() {
-    PageFactory.initElements(getDriver(), this);
-  }
-
   public void openMainPage() {
     getDriver().get("https://rozetka.com.ua/");
   }
