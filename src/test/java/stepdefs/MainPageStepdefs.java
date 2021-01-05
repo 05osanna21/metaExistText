@@ -9,6 +9,8 @@ import pages.MainPage;
 
 public class MainPageStepdefs {
     MainPage mainPage = new MainPage();
+    
+    
     @Given("I open main page")
     public void iOpenMainPage() {
         mainPage.openMainPage();
